@@ -75,7 +75,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 45%;
         height: 100vh; /*alto*/
         position: fixed;
         top: 0;
@@ -113,18 +113,23 @@
 
 .segments {
     width: 100%;
-    height: 1600px; /*auto*/ /*800px*/
+    height: 1600px; /*auto*/ /*800px*/ 
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .segment-0 {background-image: url(https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1570&q=80);}
+
 .segment-1 {background-image: url(https://images.unsplash.com/photo-1544816135-b44f18b3c5d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80);}
-.segment-2 {background-image: url(https://images.unsplash.com/photo-1588075438444-11018654f08d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);}
+
+.segment-2 {background-image: url(https://images.unsplash.com/photo-1588075438444-11018654f08d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    /* height: 4290px; */
+}
+
 .segment-3 {background-image: url(img/patron.jpg);}
 
-
+/* segment-1 */
 .information {
     border: 1px solid black; /* QUITAR*/
     max-width: 530px;
@@ -143,6 +148,8 @@
     margin-top: 1em;
     letter-spacing: 1px;
 }
+
+/* segment-2 / CARDS */
 .container2{
     width: 100%;
     max-width: 1200px;
@@ -204,70 +211,99 @@
 
 }
 
-
-/* Formulario */
-form {
-    border: 2px solid black; /*Quitar*/
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 5em auto;
-    padding-bottom: 2em;
-}
-
-input, button {
-    margin: 0;
-    font-family: inherit;
-    font-size: 1rem;
-    line-height: 1.4;
-}
-
-.formulario {
-    margin: 0 auto 1.2em auto;
-    padding: 0.25em;
-}
-
-.form-content {
-    display: block;
-    width: 80%;
-    height: 2em;
-    color: #5d6063;
-    margin: auto;
-    border: 2px solid #8a8e92;
-    border-radius: .2rem;
-}
-
-label {
-    display: block;
-    margin: 0.5rem 0;
-    font-size: 16px;
-}
-
-.formulario button {
-    display:block;
-    background: dodgerblue;
-    border: none;
-    width: 50%;
-    margin: auto;
-    padding: 0.50rem;
-    border-radius: 3px;
-    color: #eee;
-    cursor: pointer;
-}
-
-button:active {
-    color: #eee;
-    transform: translatey(0.2rem);
-}
-
-button:hover {
-    background: #eee;
-    color:dodgerblue;
-    transition: color 0.5s ease;
-}
-
 .container3{
     max-width: 1120px;
     width: 100%;
     background-color: grey;
+}
+
+/* ------------------------------------------------------ */
+/* segment-3 / Formulario */
+
+.form {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 6em;
+    width: 90%;
+    max-width: 500px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+}
+
+.form-title {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.form-container {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form-group {
+    position: relative;
+    --color: #5757577e;
+}
+
+.form-input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.form-input:not(:placeholder-shown) {
+    color: #4d4646;
+}
+
+.form-input:focus + .form-label, 
+.form-input:not(:placeholder-shown) + .form-label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #cc44ff;
+}
+
+.form-label {
+    color: #252525;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form-submit {
+    background: #cc44ff;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+.form-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cc44ff;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form-input:focus ~ .form-line,
+.form-input:not(:placeholder-shown) ~ .form-line {
+    transform: scale(1);
 }
