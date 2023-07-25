@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Links -->
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
+    
+    
+    <a href="https://wa.me/56986286776?text=Hola%20tengo%20dudas%20y%20preguntas" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+  
     <header>
         <nav>
             <ul class="nav-bar">
                 <li class="logo"><a href=""><img src="./img/logo.png" alt=""></a></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Acerca</a></li>
-                    <li><a href="">Cursos</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
                     <li><a href="">Agendar</a></li>
+                    <li><a href="">Contacto</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -26,31 +35,32 @@
     </header>
     
     <div class="container">
-        <section class="segments segment-0"></section>
+        <section class="segments segment-0" id="inicio"></section>
 
-        <section class="segments segment-1">
+        <section class="segments segment-1" id="acerca">
             <div class="information">
                 <h2>¿Quienes Somos?</h2>
-                <p>En este curso de 10 clases, de 3 hrs cada una; aprenderás a manejar profesionalmente las distintas herramientas de corte; como el posicionamiento en manos, movimiento de muñecas y el propósito de uso. 
-                    te enseñaremos los ángulos de corte, para efectuar distintos diseños en el cabello; podrás efectuar cortes pixie, encapado, desfilado, escalonado, bob, mullet y shaggy.
-                    Para el corte de varón, practicaras la técnica de degradado urbano, como asi mismo podrás aprender la técnica tradicional de mano alzada con máquina y corte de barba. 
-                    </p>
+                <p>
+                    El objetivo del instituto de peluquería y centro de capacitación ALL ABOUT HAIR es proporcionar a todos sus alumnos los conocimientos necesarios para desempeñar una labor profesional dentro del ámbito en el que se han decidido, por ejemplo, Estilistas, técnicos en peluquería, coloristas o manicuristas.
+                    Nosotros proporcionamos una excelencia en materia de conocimientos, no solo teóricos, sino también técnicos y profesionales.
+
+                    por tanto, nuestra visión es transmitir una enseñanza de calidad, que sirve de carta de presentación a nuestros alumnos y alumnas, con el fin de un desempeño profesional de distinción…
+
+                    Esta calidad viene dada de la mano de profesionales de sobrada experiencia en su campo de trabajo. Acostumbrados a lidiar con todo tipo de situaciones reales que se encuentran hoy en día en los salones de belleza y peluquerías del país. Transmitiendo sus conocimientos y vivencias a los alumnos.
+                    Nuestra misión es proporcionar una enseñanza profesional y actualizada. Hecha y pensada para afrontar con garantías de éxito el mercado laboral de hoy en día. Un mercado que cada vez más, necesita profesionales calificados y versátiles que cumplan y sepan desenvolverse en distintas situaciones, alcanzando siempre el éxito para ellos y la empresa, salón de belleza o peluquería en la que trabajen.
+                </p>
             </div>
 
-            <div class="img-container">
-                <ul class="slider">
-                    <li id="slide1"><img src="./img/profesora-1.jpeg" alt=""></li>
-                    <li id="slide2"><img src="./img/profesora-2.jpeg" alt=""></li>
-                </ul>
-
-                <ul class="menu-slider">
-                    <li><a href="#slide1"></a></li>
-                    <li><a href="#slide2"></a></li>
+            <div class="slider">
+                <ul>
+                    <li><img src="./img/profesora-1.jpeg" alt=""></li>
+                    <li><img src="./img/profesora-2.jpeg" alt=""></li>
                 </ul>
             </div>
+
         </section>
 
-        <section class="segments segment-2">
+        <section class="segments segment-2" id="cursos">
 
             <div class="container2">
                 
@@ -58,16 +68,16 @@
                     <figure><img src="./img/peinado1V2.jpg"></figure>
                     <div class="contenido">
                         <h3>Taller Corte Dama y varon</h3>
-                        <p>aprenderás a manejar profesionalmente las distintas herramientas de corte; como el posicionamiento en manos, movimiento de muñecas y el propósito de uso</p>
+                        <p>aprenderás a manejar profesionalmente las distintas herramientas de corte: como el posicionamiento en manos, movimiento de muñecas y el propósito de uso</p>
                         <a href="#">leer mas</a>
                     </div>
                 </div>
 
                 <div class="card"> 
-                     <figure><img src="./img/manicura.jpeg"></figure>
+                     <figure><img src="./img/pelo2-0.jpg"></figure>
                     <div class="contenido">
-                        <h3>curso2</h3>
-                        <p>aqui va un resumen del contenido del curso o el precio da lo mismo</p>
+                        <h3>Manicura Integral</h3>
+                        <p>Aprenderás las medidas de higiene que una manicurista debe tener consigo misma, al manipular herramientas y de la misma forma con los clientes. </p>
                         <a href="#">leer mas</a>
                     </div>
                 </div>
@@ -75,7 +85,52 @@
                 <div class="card"> 
                     <figure><img src="./img/pelo2-0.jpg"></figure>
                     <div class="contenido">
-                        <h3>curso3</h3>
+                        <h3>Curso de Depilación</h3>
+                        <p>Aprenderás sobre teoría del vello, interpretar la dirección de extracción, enfermedades básicas de la piel, composición y manejo de cera caliente y roll-on, manejar visagismo en cejas.</p>
+                        <a href="#">leer mas</a>
+                    </div>
+                </div>
+                
+                <div class="card"> 
+                    <figure><img src="./img/pelo2-0.jpg"></figure>
+                    <div class="contenido">
+                        <h3>Lifting pestañas + planchado de cejas</h3>
+                        <p>Te enseñaremos la diferencia entre lifting y ondulación de pestañas, como también la práctica de estos, además del planchado de cejas</p>
+                        <a href="#">leer mas</a>
+                    </div>
+                </div>
+                
+                <div class="card"> 
+                    <figure><img src="./img/pelo2-0.jpg"></figure>
+                    <div class="contenido">
+                        <h3>Taller Express</h3>
+                        <p>Pondrás en práctica lo aprendido en clases de teorías de piel e implementos para la realización de una limpieza facial básica/profunda.</p>
+                        <a href="#">leer mas</a>
+                    </div>
+                </div>
+                
+                <div class="card"> 
+                    <figure><img src="./img/pelo2-0.jpg"></figure>
+                    <div class="contenido">
+                        <h3>Taller Trenzas</h3>
+                        <p>Aprenderás a manejar el pelo sintético kanekalon para crear trenzas con más volumen, largo y creatividad.</p>
+                        <a href="#">leer mas</a>
+                    </div>
+                </div>
+                
+                <div class="card"> 
+                    <figure><img src="./img/pelo2-0.jpg"></figure>
+                    <div class="contenido">
+                        <h3>Color dama y varon</h3>
+                        <p>Pondrás en práctica la teoría del color, conocimiento del círculo cromático, ley de color y más teoría previa a la práctica. </p>
+                        <a href="#">leer mas</a>
+                    </div>
+                </div>
+                
+                <div class="card"> 
+                    <figure><img src="./img/pelo2-0.jpg"></figure>
+                    <div class="contenido">
+                        <h3>bb glow</h3>
                         <p>aqui va un resumen del contenido del curso o el precio da lo mismo</p>
                         <a href="#">leer mas</a>
                     </div>
@@ -84,52 +139,7 @@
                 <div class="card"> 
                     <figure><img src="./img/pelo2-0.jpg"></figure>
                     <div class="contenido">
-                        <h3>curso4</h3>
-                        <p>aqui va un resumen del contenido del curso o el precio da lo mismo</p>
-                        <a href="#">leer mas</a>
-                    </div>
-                </div>
-                
-                <div class="card"> 
-                    <figure><img src="./img/pelo2-0.jpg"></figure>
-                    <div class="contenido">
-                        <h3>curso5</h3>
-                        <p>aqui va un resumen del contenido del curso o el precio da lo mismo</p>
-                        <a href="#">leer mas</a>
-                    </div>
-                </div>
-                
-                <div class="card"> 
-                    <figure><img src="./img/pelo2-0.jpg"></figure>
-                    <div class="contenido">
-                        <h3>curso6</h3>
-                        <p>aqui va un resumen del contenido del curso o el precio da lo mismo</p>
-                        <a href="#">leer mas</a>
-                    </div>
-                </div>
-                
-                <div class="card"> 
-                    <figure><img src="./img/pelo2-0.jpg"></figure>
-                    <div class="contenido">
-                        <h3>curso7</h3>
-                        <p>aqui va un resumen del contenido del curso o el precio da lo mismo</p>
-                        <a href="#">leer mas</a>
-                    </div>
-                </div>
-                
-                <div class="card"> 
-                    <figure><img src="./img/pelo2-0.jpg"></figure>
-                    <div class="contenido">
-                        <h3>curso8</h3>
-                        <p>aqui va un resumen del contenido del curso o el precio da lo mismo</p>
-                        <a href="#">leer mas</a>
-                    </div>
-                </div>
-                
-                <div class="card"> 
-                    <figure><img src="./img/pelo2-0.jpg"></figure>
-                    <div class="contenido">
-                        <h3>curso9</h3>
+                        <h3>Taller esmaltado semi permanente</h3>
                         <p>aqui va un resumen del contenido del curso o el precio da lo mismo</p>
                         <a href="#">leer mas</a>
                     </div>
@@ -142,13 +152,13 @@
                 <h2 class="form-title">Matricula</h2>
                 <div class="form-container">
                     <div class="form-group">
-                        <input type="text" name="name" id="name" class="form-input" placeholder=" ">
+                        <input type="text" name="name" id="name" class="form-input" placeholder=" " required>
                         <label for="name" class="form-label">Nombre:</label>
                         <span class="form-line"></span>   
                     </div>
 
                     <div class="form-group">
-                        <input type="text" name="last-name" id="last-name" class="form-input" placeholder=" ">
+                        <input type="text" name="last-name" id="last-name" class="form-input" placeholder=" " required>
                         <label for="last-name" class="form-label">Apellido:</label>
                         <span class="form-line"></span>
                     </div>
@@ -160,7 +170,7 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="tel" name="phone" id="phone" class="form-input" placeholder=" ">
+                        <input type="tel" name="phone" id="phone" class="form-input" placeholder=" " required>
                         <label for="phone" class="form-label">Teléfono:</label>
                         <span class="form-line"></span>
                     </div>
