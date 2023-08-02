@@ -42,18 +42,6 @@
     text-transform: uppercase;
 }
 
-/*  
-.menu li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: #000; 
-    transition: .15s ease-in-out;
-}
-*/
 
 .menu li a:hover {
     width: 120%;
@@ -123,16 +111,14 @@
     align-items: center;   
 }
 
-/* .segments {
-    background-attachment: fixed;
-    height: 100vh;
-    width: 100vw;
-} */
 
 .segments {
     width: 100%;
     height: auto; /*1600px*/ /*800px*/
     background-position: center;
+    -webkit-background-size: cover;
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
     background-size: cover;
     background-attachment: fixed;
 }
@@ -161,21 +147,49 @@
 /* segment-1 */
 .information {
     /* border: 1px solid black; */
-    max-width: 630px;
+    max-width: 830px;
     width: 90%;
     height: 500px;
     margin: 10% 2%;
     padding: 1em;
 }
 
+.information-content {
+    width: 100%; 
+    height: 100%; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 20px; 
+    display: inline-flex;
+}
+
 .information h2 {
+    align-self: stretch; 
+    text-align: center; 
+    color: #1E1E1E; 
+    font-size: 40px; 
+    /* font-size: 2em;  */
+    font-family: Inter; 
+    font-weight: bold; 
+    word-wrap: break-word;
+}
+
+.information .line-title {
+    align-self: stretch; 
+    height: 0px; 
+    border: 2.50px #E5B0CE solid;
+}
+
+/* .information h2 {
     font-size: 2em;
     text-align: center;
-}
+} */
 
 .information p {
     margin-top: 3em;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .slider {
@@ -236,6 +250,14 @@
     .slider {margin-top: 16%;}
 }
 
+@media(max-width: 800px){
+    .segment-1 {
+        height: 1280px;
+        flex-wrap: wrap;
+    }
+    
+}
+
 @media(max-width: 345px){   
     .segment-1 {height: 1700px;}
 }
@@ -251,6 +273,7 @@
     text-align: center;
     font-size: 60px; /*modificar*/
     color: #252525; /* modificar */
+    -webkit-text-decoration: underline #e5b0ce;
     text-decoration: underline #e5b0ce; /**/
 }
 
@@ -465,3 +488,4 @@
 .my-float{
 	margin-top:16px;
 }
+
