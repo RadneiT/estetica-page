@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course {
+   /* border: 5px solid green; /*Quitar */
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+    margin: 10% 2%;
+}
+
+.title h2 {margin: 2% 2%;}
+
+.course .line-title {
+    align-self: stretch;
+    height: 0;
+    max-width: 400px;
+    width: 100%;
+    border: 2.50px #e5b0ce solid;
+    margin: 2% 2%;
+}
+
+.course-info {
+    max-width: 500px;
+    width: 90%;
+    height: auto;
+    margin: 6% 2% 2% 2%;
+    padding: 1em;
+}
+
+.course-info p, .course-info ul {
+    padding: 1em;
+    background: rgba(229, 176, 206, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(229, 176, 206, 0.44);
+}
+.course-info ul {
+ padding: 5%;
+}
+
+.course-info p, .course-info li {line-height: 2;}
+
+.img-container {
+    max-width: 400px;
+    width: 100%;
+    height: 490px;
+    margin: -19% 2% 5% 2%;
+    padding: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Medias Queries */
+@media (max-width: 1200px) {
+    .course-info p, .course-info li {font-size: 18px;}
+
+
+}
+
+@media (max-width: 769px) {
+
+    .course-container {
+        flex-wrap: wrap;
+        height: 2000px;
+    }
+
+    .img-container {
+        margin-top: 0;
+        margin-bottom: 20%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .course-container {height: 2500px;}
+
+    .course-info p, .course-info li {font-size: 20px;}
+
+}
+
+@media (max-width: 380px) {
+    .course-container {height: 2800px;}
+}
