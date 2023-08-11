@@ -572,11 +572,11 @@
 
 @media (max-width: 376px){
       
-    .segment-1 {height: 2400px;}
+    .segment-1 {height: 2500px;}
 
     .information p {font-size: 20px;}
 
-    .slider {margin-top: 55em;}
+    .slider {margin-top: 60em;}
 }
 
 @media (max-width: 321px) {
